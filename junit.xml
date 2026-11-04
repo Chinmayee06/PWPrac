@@ -1,0 +1,35 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="16.079428999999998">
+<testsuite name="reporters.spec.ts" timestamp="2026-07-30T14:48:44.438Z" hostname="chromium" tests="3" failures="1" skipped="0" time="13.113" errors="0">
+<testcase name="logotest" classname="reporters.spec.ts" time="4.621">
+</testcase>
+<testcase name="title test" classname="reporters.spec.ts" time="3.166">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\reporters-title-test-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(received).toContain(expected) // indexOf" type="expect.toContain">
+<![CDATA[  [chromium] › reporters.spec.ts:13:5 › title test ─────────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Demo Web Shop1"
+    Received string:    "Demo Web Shop"
+
+      12 |
+      13 | test('title test', async ({ page }) => {
+    > 14 |     expect(await page.title()).toContain("Demo Web Shop1");
+         |                                ^
+      15 | });
+      16 |
+      17 | test('search test', async ({ page }) => {
+        at C:\PWDemos\tests\reporters.spec.ts:14:32
+
+    Error Context: ..\test-results\reporters-title-test-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="search test" classname="reporters.spec.ts" time="5.326">
+</testcase>
+</testsuite>
+</testsuites>
